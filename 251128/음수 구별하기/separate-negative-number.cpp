@@ -6,8 +6,10 @@ int main() {
     int a;
     cin >> a;
 
+    cout << a << '\n';
+
     if(a < 0) {
-        cout << a << '\n' << "minus";
+        cout << "minus";
     }
     return 0;
 }
