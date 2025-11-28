@@ -9,6 +9,8 @@ int main() {
 
     double average = ((double) a + b) / 2;
 
+    cout << fixed;
+    cout.precision(1);
     cout << a + b << " " << average;
 
     return 0;
