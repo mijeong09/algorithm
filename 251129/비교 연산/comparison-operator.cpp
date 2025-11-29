@@ -5,26 +5,14 @@ int main() {
     // Please write your code here.
     int a, b;
     cin >> a >> b;
-    bool boolean = true;
+    char c = '\n';
 
-    if(a >= b) {
-        cout << true << '\n';
-    } else cout << false << '\n';
-    if(a > b) {
-        cout << true << '\n';
-    } else cout << false << '\n';
-    if(a <= b) {
-        cout << true << '\n';
-    } else cout << false << '\n';
-     if(a < b) {
-        cout << true << '\n';
-    } else cout << false << '\n';
-    if(a == b) {
-        cout << true << '\n';
-    } else cout << false << '\n';
-    if(a != b) {
-        cout << true << '\n';
-    } else cout << false << '\n';
+    cout << (a >=  b) << c;
+    cout << (a >  b) << c;
+    cout << (a <=  b) << c;
+    cout << (a <  b) << c;
+    cout << (a ==  b) << c;
+    cout << (a !=  b) << c;
         
     return 0;
 }
