@@ -14,4 +14,6 @@ int main() {
     } else if(n >= 60) {
         cout << "D";
     } else cout << "F";
+
+    return 0;
 }
