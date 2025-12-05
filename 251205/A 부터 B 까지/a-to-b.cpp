@@ -4,15 +4,18 @@ using namespace std;
 int main() {
     int a, b;
     cin >> a >> b;
+    int n;
 
-    for(int i = a; i < b; i++) {
-        if(i % 2 != 0) {
-            i *= 2;
-        } else i *= 3;
+    while(1) {
+        if(a % 2 != 0) {
+            n = a * 2;
+        } else {
+            n = a * 3;
+        }
 
-        if(i > b) break;
+        if(n > b) break;
 
-        cout << i << " ";
+        cout << n << " ";
     }
 
     return 0;
