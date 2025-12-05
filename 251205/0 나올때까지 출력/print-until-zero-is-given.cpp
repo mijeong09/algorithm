@@ -6,6 +6,9 @@ int main() {
 
     while(n != 0) {
         cin >> n;
+
+        if(n == 0) break;
+        
         cout << n << "\n";
     }
     return 0;
