@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     string a, b;
-    cint >> a >> b;
+    cin >> a >> b;
 
     if(a.length() == b.length()) cout << "same";
     else {
