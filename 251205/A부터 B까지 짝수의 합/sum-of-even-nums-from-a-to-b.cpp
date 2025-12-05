@@ -6,12 +6,12 @@ int main() {
     cin >> a >> b;
 
     int sum = 0;
-    for(int i = a; a <= b; a++) {
+    for(int i = a; i <= b; i++) {
         if(i % 2 != 0) continue;
 
         sum += i;
     }
     cout << sum;
-    
+
     return 0;
 }
