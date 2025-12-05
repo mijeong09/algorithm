@@ -10,9 +10,8 @@ int main() {
         sum += i;
 
         if(sum >= n) break;
+        cout << i;
     }
 
-    cout << sum;
-    
     return 0;
 }
