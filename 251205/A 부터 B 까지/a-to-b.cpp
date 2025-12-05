@@ -12,7 +12,7 @@ int main() {
 
         if(i > b) break;
 
-        cout << a << " ";
+        cout << i << " ";
     }
 
     return 0;
