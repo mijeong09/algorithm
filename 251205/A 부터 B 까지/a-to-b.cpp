@@ -5,12 +5,12 @@ int main() {
     int a, b;
     cin >> a >> b;
 
-    while(1) {
-        if(a % 2 != 0) {
-            a *= 2;
-        } else a *= 3;
+    for(int i = a; i < b; i++) {
+        if(i % 2 != 0) {
+            i *= 2;
+        } else i *= 3;
 
-        if(a > b) break;
+        if(i > b) break;
 
         cout << a << " ";
     }
