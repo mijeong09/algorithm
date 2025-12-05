@@ -6,16 +6,18 @@ int main() {
     cin >> a >> b;
     int n;
 
+    cout << a << " ";
+
     while(1) {
         if(a % 2 != 0) {
-            n = a * 2;
+            a *= 2;
         } else {
-            n = a * 3;
+            a += 3;
         }
 
-        if(n > b) break;
+        if(a > b) break;
 
-        cout << n << " ";
+        cout << a << " ";
     }
 
     return 0;
