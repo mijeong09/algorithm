@@ -2,15 +2,17 @@
 using namespace std;
 
 int main() {
-    int a, b;
+    int a, b, c;
 
-    cin.get();
-    cin.get();
     cin >> a;
     cin.get();
     cin >> b;
+    cin.get();
+    cin >> c;
 
-    cout << 010 << "-" << a << "-" << b;
     
+
+    cout << "010" << "-" << c << "-" << b;
+
     return 0;
 }
