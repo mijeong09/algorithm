@@ -2,26 +2,20 @@
 using namespace std;
 
 int main() {
-    int n, arr[10][10];
+    int n;
     cin >> n;
 
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
-            if(i % 2 == 0) {
-                arr[j][i] = j + 1;
+            if(j % 2 == 0) {
+                cout << i + 1;
             } else {
-                arr[j][i] = n - j;
+                cout << n - i;
             }
         }
-    }
-
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < n; j++) {
-            cout << arr[i][j];
-        }
-
         cout << endl;
     }
+
 
     return 0;
 }
