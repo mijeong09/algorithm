@@ -3,12 +3,10 @@ using namespace std;
 
 int main() {
     int a = 5, b = 6, c = 7;
-    int tempB = b, tempC = c;
-    b = a;
-
-    c = tempB;
-
-    a = tempC;
+    int temp = a;
+    a = c;
+    c = b;
+    b = temp;
 
     cout << a << "\n" << b << "\n" << c;
 
