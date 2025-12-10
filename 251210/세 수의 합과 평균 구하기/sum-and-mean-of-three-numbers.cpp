@@ -6,7 +6,7 @@ int main() {
 
     cin >> a >> b >> c;
 
-    cout << a + b + c << endl << (double)(a + b + c) / 3;
+    cout << a + b + c << endl << (a + b + c) / 3;
 
     return 0;
 }
