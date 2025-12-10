@@ -6,7 +6,7 @@ int main() {
 
     cin >> n;
 
-    cout << (n = 100 ? "pass" : "failure");
-    
+    cout << (n == 100 ? "pass" : "failure");
+
     return 0;
 }
