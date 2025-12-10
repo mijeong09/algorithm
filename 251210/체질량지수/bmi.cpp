@@ -6,9 +6,9 @@ int main() {
 
     cin >> h >> w;
 
-    double bmi = (w * 10000) / (h * h);
+    int bmi = (w * 10000) / (h * h);
 
-    cout << (int)bmi << "\n";
+    cout << bmi << "\n";
 
     if (bmi >= 25) cout << "Obesity";
 
