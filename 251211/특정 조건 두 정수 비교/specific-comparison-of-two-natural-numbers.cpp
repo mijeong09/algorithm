@@ -6,7 +6,7 @@ int main() {
 
     cin >> a >> b;
 
-    cout << (a > b ? 1 : 0) << " ";
+    cout << (a < b ? 1 : 0) << " ";
     cout << (a == b ? 1 : 0);
 
     return 0;
