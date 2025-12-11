@@ -7,7 +7,7 @@ int main() {
 
     cin >> ageA >> a >> ageB >> b;
 
-    if((ageA >= 19 && A == 'M') || (ageB >= 19 && b == 'M')) {
+    if((ageA >= 19 && a == 'M') || (ageB >= 19 && b == 'M')) {
         cout << 1;
     } else cout << 0;
 
