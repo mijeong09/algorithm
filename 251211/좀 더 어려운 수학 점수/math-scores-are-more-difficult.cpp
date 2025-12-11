@@ -6,9 +6,8 @@ int main() {
 
     cin >> mA >> eA >> mB >> eB;
 
-    if(mA != mB) {
-        cout << (mA > mB ? 'A': 'B');
-    } else cout << (eA > eB ? 'A' : 'B');
+    if(mA > mB || (mA == mB && eA > eB)) cout << 'A';
+    else cout << 'B';
 
     return 0;
 }
