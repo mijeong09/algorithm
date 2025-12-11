@@ -6,7 +6,7 @@ int main() {
 
     cin >> a;
 
-    cout << ((a < 10 || a > 20) ? "Yes" : "no");
-    
+    cout << ((a < 10 || a > 20) ? "yes" : "no");
+
     return 0;
 }
