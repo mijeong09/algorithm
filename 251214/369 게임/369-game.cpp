@@ -2,27 +2,22 @@
 using namespace std;
 
 int main() {
-    int n, cnt = 1, t = 0;
+    int n;
 
     cin >> n;
 
     for(int i = 1; i <= n; i++) {
 
-        if(i % 3 == 0) cout << 0 << " ";
-        else if(cnt == 3) {
+        if(
+            i % 3 == 0
+            || i % 10 == 3 || i % 10 == 6 || i % 10 == 9
+            || i / 10 == 3 || i / 10 == 6 || i / 10 == 9
+        ) {
             cout << 0 << " ";
-        } else if(t >= 3 && t % 3 == 0) {
-            cout << 0 << " ";
-        }
-        else {
+        } else {
             cout << i << " ";
         }
-        cnt++;
-
-        if(i % 10 == 0) {
-            cnt = 1;
-            t++;
-        }
     }
+
     return 0;
 }
