@@ -7,13 +7,13 @@ int main() {
     cin >> n;
 
     for(int i = 1; ; i++) {
-        
-        if(n / i == 0) {
+
+        n = n / i;
+
+        if(n <= 1) {
             cout << i;
             break;
         }
-
-        n = n / i;
     }
 
     return 0;
