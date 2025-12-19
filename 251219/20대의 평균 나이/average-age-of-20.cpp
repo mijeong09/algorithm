@@ -7,7 +7,7 @@ int main() {
     while(true) {
         cin >> n;
 
-        if(n >= 30) {
+        if(n < 20 || n >= 30) {
 
             cout << fixed;
             cout.precision(2);
