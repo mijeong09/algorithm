@@ -6,12 +6,9 @@ int main() {
 
     cin >> n;
 
-    while(n > 2) {
+    while(n != 1) {
         n /= 2;
         cnt++;
-
-        if(n == 2) break;
-
     }
 
     cout << cnt;
