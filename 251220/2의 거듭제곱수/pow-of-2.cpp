@@ -6,7 +6,7 @@ int main() {
 
     cin >> n;
 
-    while(n >= 2) {
+    while(n > 2) {
         n /= 2;
         cnt++;
 
@@ -15,6 +15,6 @@ int main() {
     }
 
     cout << cnt;
-    
+
     return 0;
 }
