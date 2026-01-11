@@ -11,7 +11,7 @@ int main() {
             cout << c;
             c++;
 
-            if(c == 'Z' + 1) c = 'A';
+            if(c > 'Z') c = 'A';
         }
         cout << endl;
     }
