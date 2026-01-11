@@ -11,12 +11,12 @@ int main() {
 
         int mul = 1;
 
-        for(int i = a; i <= b; i++) {
-            mul *= i;
+        for(int j = a; j <= b; j++) {
+            mul *= j;
         }
         
         cout << mul << endl;
     }
-    
+
     return 0;
 }
