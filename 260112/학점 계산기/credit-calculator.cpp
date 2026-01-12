@@ -13,7 +13,7 @@ int main() {
         sum_val += arr[i];
     }
 
-    double avg = (double)sum_val / n;
+    double avg = sum_val / n;
 
     cout << fixed;
     cout.precision(1);
