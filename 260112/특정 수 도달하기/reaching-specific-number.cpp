@@ -16,6 +16,9 @@ int main() {
         cnt++;
     }
 
+    cout << fixed;
+    cout.precision(1);
+
     cout << sum << " ";
     cout << (double)sum / cnt;
 
