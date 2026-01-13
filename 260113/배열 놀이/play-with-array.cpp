@@ -22,15 +22,15 @@ int main() {
         else if(a == 2) {
             cin >> b;
 
-            int idx = 1000;
+            int idx = -1;
             for(int j = 0; j < n; j++) {
                 if(arr[j] == b) {
-                    if(j < idx) idx = j;
+                    idx = j;
+                    break;
                 }
             }
             
-            if(idx == 1000) cout << 0 << endl;
-            else cout << idx + 1 << endl;
+            cout << idx + 1 << endl;
         }
         else {
             cin >> b >> c;
