@@ -2,21 +2,29 @@
 
 using namespace std;
 
+#define MAX_N 1000
+
 int N;
-int nums[1000], new_arr[1001] = {0, };
+int nums[MAX_N];
 
 int main() {
     cin >> N;
     for (int i = 0; i < N; i++) {
         cin >> nums[i];
-        new_arr[nums[i]]++;
     }
 
     int max = -1;
-    for(int i = 1; i < 1001; i++) {
+    for(int i = 0; i < N; i++) {
+        int curr_num = nums[i];
 
-        if(new_arr[i] == 1) {
-            if(i > max) max = i;
+        if(max < curr_num) {
+            int cnt = 0;
+
+            for(int j = 0; j < N; j++) {
+                if(curr_num == nums[j]) cnt++;
+
+            }
+            if(cnt == 1) max = curr_num;
         }
     }
     cout << max;
