@@ -10,16 +10,15 @@ int main() {
         cin >> arr[i];
     }
 
-    for(int i = n - 1; i > 0; i--) {
-        for(int j = i - 1; j >= 0; j--) {
-            if(arr[i] > arr[j]) {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
+    int max1 = 1, max2 = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] >= max1) {
+            max2 = max1;
+            max1 = arr[i];
         }
+        else if(arr[i] >= max2) max2 = arr[i];
     }
-    cout << arr[0] << " " << arr[1];
+    cout << max1 << " " << max2;
 
     return 0;
 }
