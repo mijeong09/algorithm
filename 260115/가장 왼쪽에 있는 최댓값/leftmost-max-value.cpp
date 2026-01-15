@@ -12,18 +12,23 @@ int main() {
         cin >> a[i];
     }
 
-    int idx = N;
-    while(idx > 0) {
-        int max = 0;
+    int prev_idx = N;
 
-        for(int i = idx - 1; i >= 0; i--) {
-            if(a[i] >= max) {
-                max = a[i];
-                idx = i;
+    while(true) {
+        int max_idx = 0;
+        
+        for(int i = 0; i < prev_idx; i++) {
+            if(a[i] > a[max_idx]) {
+                max_idx = i;
             }
         }
-        cout << idx + 1 << " ";
-    }
 
+        cout << max_idx + 1 << " ";
+
+        if(max_idx == 0) break;
+        
+        prev_idx = max_idx;
+
+    }
     return 0;
 }
