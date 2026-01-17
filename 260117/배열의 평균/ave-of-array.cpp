@@ -28,11 +28,11 @@ int main() {
     }
     cout << endl;
 
-    for(int i = 0; i < 4; i++) {
+    for(int j = 0; j < 4; j++) {
         double sum = 0;
 
-        for(int j = 0; j < 2; j++) {
-            sum += arr[j][i];
+        for(int i = 0; i < 2; i++) {
+            sum += arr[i][j];
         }
 
         cout << sum / 2 << " ";
