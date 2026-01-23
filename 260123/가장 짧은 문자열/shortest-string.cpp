@@ -11,17 +11,15 @@ int main() {
     int len2 = str2.length();
     int len3 = str3.length();
 
-    if(len1 >= len2 && len1 >= len3) {
-        if(len2 >= len3) cout << len1 - len3;
-        else cout << len1 - len2;
+    int mx = len1;
+    if(mx < len2) mx = len2;
+    if(mx < len3) mx = len3;
 
-    } else if(len2 >= len1 && len2 >= len3) {
-        if(len1 >= len3) cout << len2 - len3;
-        else cout << len2 - len1;
-    } else {
-        if(len1 >= len2) cout << len3 - len2;
-        else cout << len3 - len1;
-    }
+    int mn = len1;
+    if(mn > len2) mn = len2;
+    if(mn > len3) mn = len3;
+
+    cout << mx - mn;
 
     return 0;
 }
