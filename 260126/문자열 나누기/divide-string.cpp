@@ -13,22 +13,14 @@ int main() {
         tot_str.append(str);
     }
     
-    string res = "";
-    int cnt = 0;
     for(int i = 0; i < tot_str.length(); i++) {
 
-        res += tot_str[i];
-        cnt++;
+        cout << tot_str[i];
 
-        if(cnt == 5) {
-            cout << res << endl;
-            
-            cnt = 0;
-            res = "";
+        if((i + 1) % 5 == 0) {
+            cout << endl;
         }
     }
-
-    cout << res;
 
     return 0;
 }
