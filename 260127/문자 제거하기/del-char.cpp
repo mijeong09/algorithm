@@ -7,19 +7,16 @@ int main() {
 
     cin >> str;
 
-    while(true) {
+    while(str.length() > 1) {
         cin >> n;
 
         if(n > str.length() - 1) {
-            str.erase(str.length() - 1, 1);
+            n = str.length() - 1;
         }
-        else {
-            str.erase(n, 1);
-        }
+        
+        str.erase(n, 1);
 
         cout << str << endl;
-
-        if(str.length() == 1) break;
     }
 
     return 0;
