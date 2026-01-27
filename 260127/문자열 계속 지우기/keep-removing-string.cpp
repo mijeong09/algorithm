@@ -33,7 +33,7 @@ int main() {
                 }
 
                 idx = i;
-                str = str.substr(0, i) + str.substr(i + 2);
+                str.erase(i, len_t);
             }
         }
 
