@@ -11,27 +11,35 @@ int main() {
     int len_t = target.length();
 
     while(true) {
+        int idx = -1;
+        
+        if(str.length() == 0) break;
 
-        bool exists = true;
+        for(int i = 0; i <= str.length() - len_t; i++) {
 
-        for(int i = 0; i <= (str.length() - len_t); i++) {
-            exists = true;
+            bool exists = true;
 
             for(int j = 0; j < len_t; j++) {
-
                 if(str[i + j] != target[j]) {
                     exists = false;
-                    break;
                 }
             }
 
             if(exists) {
-                str.erase(i, len_t);
+                
+                if(str == target) {
+                    str = "";
+                    break;
+                }
+
+                idx = i;
+                str = str.substr(0, i) + str.substr(i + 2);
             }
         }
 
-        if(!exists) break;
+        if(idx == -1) break;
     }
+
     cout << str;
 
     return 0;
