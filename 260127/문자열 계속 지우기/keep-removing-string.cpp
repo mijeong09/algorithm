@@ -2,45 +2,40 @@
 
 using namespace std;
 
+string A, B;
 
 int main() {
-    string str, target;
+    cin >> A;
+    cin >> B;
 
-    cin >> str >> target;
-
-    int len_t = target.length();
+    int lenA = A.length();
+    int lenB = B.length();
 
     while(true) {
         int idx = -1;
 
-        if(str.length() == 0 || str.length() < len_t) break;
-
-        for(int i = 0; i <= str.length() - len_t; i++) {
-
+        for(int i = 0; i <= lenA - lenB; i++) {
             bool exists = true;
 
-            for(int j = 0; j < len_t; j++) {
-                if(str[i + j] != target[j]) {
+            for(int j = 0; j < lenB; j++) {
+                if(A[i + j] != B[j]) {
                     exists = false;
+                    break;
                 }
             }
 
             if(exists) {
-                
-                if(str == target) {
-                    str = "";
-                    break;
-                }
-
                 idx = i;
-                str.erase(i, len_t);
+                break;
             }
         }
 
         if(idx == -1) break;
-    }
 
-    cout << str;
+        A = A.substr(0, idx) + A.substr(idx + lenB);
+        lenA -= lenB;
+    }
+    cout << A;
 
     return 0;
 }
