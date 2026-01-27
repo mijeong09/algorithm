@@ -12,8 +12,8 @@ int main() {
 
     while(true) {
         int idx = -1;
-        
-        if(str.length() == 0) break;
+
+        if(str.length() == 0 || str.length() < len_t) break;
 
         for(int i = 0; i <= str.length() - len_t; i++) {
 
