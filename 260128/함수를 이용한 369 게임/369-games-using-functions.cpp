@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool Func(int n) {
+bool Contains369(int n) {
     while(n > 0) {
         if((n % 10) == 3 || (n % 10) == 6 || (n % 10) == 9) {
             return true;
