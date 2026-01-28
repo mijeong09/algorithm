@@ -25,12 +25,12 @@ char o;
 int main() {
     cin >> a >> o >> c;
 
-    cout << a << " " << o << " " << c << " = ";
+    
 
-    if(o == '+') cout << Add(a, c);
-    else if(o == '-') cout << Subtract(a, c);
-    else if(o == '*') cout << Mul(a, c);
-    else if(o == '/') cout << Div(a, c);
+    if(o == '+') cout << a << " " << o << " " << c << " = " << Add(a, c);
+    else if(o == '-') cout << a << " " << o << " " << c << " = " << Subtract(a, c);
+    else if(o == '*') cout << a << " " << o << " " << c << " = " << Mul(a, c);
+    else if(o == '/') cout << a << " " << o << " " << c << " = " << Div(a, c);
     else cout << "False";
 
     return 0;
