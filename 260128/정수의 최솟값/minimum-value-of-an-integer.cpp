@@ -3,9 +3,12 @@
 using namespace std;
 
 int Func(int a, int b, int c) {
-    if(a <= b && a <= c) return a;
-    else if(b <= a && b <= c) return b;
-    else return c;
+    int min = a;
+
+    if(min > b) min = b;
+    if(min > c) min = c;
+
+    return min;
 }
 
 int a, b, c;
