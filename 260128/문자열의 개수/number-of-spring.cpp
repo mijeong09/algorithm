@@ -7,12 +7,10 @@ int main() {
     int cnt = 0;
 
     for(int i = 0; i < 200; i++) {
-        string a;
-        cin >> a;
+        cin >> str[i];
 
-        if(a == "0") break;
+        if(str[i] == "0") break;
 
-        str[i] = a;
         cnt++;
     }
 
