@@ -10,12 +10,9 @@ int main() {
 
     for(int i = 0; i < str.length(); i++) {
         if(isalpha(str[i])) {
-            if(islower(str[i])) {
-                cout << (char) toupper(str[i]);
-            }
-            else cout << str[i];
+            cout << (char)toupper(str[i]);
         }
     }
-    
+
     return 0;
 }
