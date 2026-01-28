@@ -10,12 +10,14 @@ int main() {
     for(int i = 0; i < a.length(); i++) {
         if(a[i] < '0' || a[i] > '9') {
             a = a.substr(0, i);
+            break;
         }
     }
 
     for(int i = 0; i < b.length(); i++) {
         if(!isdigit(b[i])) {
             b = b.substr(0, i);
+            break;
         }
     }
 
