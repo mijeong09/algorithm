@@ -5,7 +5,7 @@ using namespace std;
 int Y, M, D;
 
 bool LeapYear(int y) {
-    if(4 % y == 0 && (100 % y != 0 || 400 % y == 0)) {
+    if(y % 4 == 0 && (y % 100 != 0 || y % 400 == 0)) {
         return true;
     }
 
@@ -14,7 +14,7 @@ bool LeapYear(int y) {
 
 int LastDay(int y, int m) {
     if(m == 2) {
-        if(LastDay) return 29;
+        if(LeapYear(y)) return 29;
         else return 28;
     }
     else if(m == 4 || m == 6 || m == 9 || m == 11) 
