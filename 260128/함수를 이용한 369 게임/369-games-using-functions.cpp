@@ -24,7 +24,7 @@ int main() {
     int cnt = 0;
 
     for(int i = a; i <= b; i++) {
-        if(Func(i) || Multi(i)) cnt++;
+        if(Contains369(i) || Multi(i)) cnt++;
     }
 
     cout << cnt;
