@@ -4,14 +4,13 @@
 using namespace std;
 
 void Lcm(int n, int m) {
-    int num = max(n, m);
+    int gcd = 0;
 
-    while(true) {
-        if((num % n == 0) && (num % m == 0)) break;
+     for(int i = 1; i <= min(n, m); i++) {
+        if(n % i == 0 && m % i == 0) gcd = i;
+     }
 
-        num++;
-    }
-    cout << num;
+     cout << n * m / gcd;
 }
 
 int n, m;
