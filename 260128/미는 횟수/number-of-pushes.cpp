@@ -8,17 +8,20 @@ int main() {
 
     cin >> a >> b;
 
-    for(int i = 0; i < a.length() - 2; i++) {
+    for(int i = 0; i < a.length(); i++) {
 
         a = a.substr(a.length() - 1, 1) + a.substr(0, a.length() - 1);
         cnt++;
 
-        if(a == b) break;
+        if(a == b) {
+            cout << cnt;
+            break;
+        }
+
+        if(i == a.length() - 1) {
+            cout << -1;
+        }
     }
-
-    if(a != b) cnt = -1;
-
-    cout << cnt;
 
     return 0;
 }
