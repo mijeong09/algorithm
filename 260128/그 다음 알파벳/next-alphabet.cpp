@@ -6,8 +6,6 @@ int main() {
 
     cin >> a;
 
-    int num_a = (int)a;
-
     if(a == 'z') cout << 'a';
     else cout << (char)(a + 1);
     
