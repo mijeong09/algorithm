@@ -5,21 +5,21 @@ using namespace std;
 
 string A;
 
-string IsPalindrome(string &a) {
+bool IsPalindrome(string &a) {
     string str = "";
 
-    for(int i = a.length() - 1; i >= 0; i--) {
-        str += a[i];
+    for(int i = 0; i < (int) a.size(); i++) {
+        if(a[i] != a[(int) a.size() - 1 - i])
+            return false;
     }
-
-    return str;
+    return true;
 }
 
 int main() {
     cin >> A;
 
-    if(A == IsPalindrome(A)) cout << "Yes";
+    if(IsPalindrome(A)) cout << "Yes";
     else cout << "No";
-    
+
     return 0;
 }
