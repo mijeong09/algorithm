@@ -7,8 +7,8 @@ string str, target;
 int len;
 
 int FindStr(string str, string target) {
-    if(str.find(target, len) != string::npos) return str.find(target, len);
-    else -1;
+    if(str.find(target) != string::npos) return str.find(target);
+    else return -1;
 }
 
 
