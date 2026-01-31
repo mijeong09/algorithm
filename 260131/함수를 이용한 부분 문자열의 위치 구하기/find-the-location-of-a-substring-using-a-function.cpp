@@ -25,6 +25,8 @@ int FindIdx() {
     for(int i = 0; i < n; i++) {
         if(InSubStr(i)) return i;
     }
+    
+    return -1;
 }
 
 
